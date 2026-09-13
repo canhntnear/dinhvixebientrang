@@ -1,1 +1,451 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ưu Đãi 888K - Thiết Bị Giám Sát Hành Trình Xe Biển Trắng | Vạn Phú Khánh 114</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #f59e0b;
+            --accent-glow: rgba(245, 158, 11, 0.5);
+            --danger: #ef4444;
+            --secondary: #1e3a8a;
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #0b0f19;
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Top Bar Announcement */
+        .top-announcement {
+            background: linear-gradient(90deg, #b91c1c, #ef4444);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(239, 68, 68, 0.3);
+            animation: pulse-bg 2s infinite;
+        }
+
+        @keyframes pulse-bg {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; transform: scale(1.002); }
+            100% { opacity: 0.9; }
+        }
+
+        /* Hero Section */
+        header {
+            background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 70%);
+            padding: 50px 20px 40px 20px;
+            text-align: center;
+            position: relative;
+            border-bottom: 2px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        h1 span {
+            color: var(--accent);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* Price Box */
+        .price-box {
+            background: rgba(15, 23, 42, 0.85);
+            border: 2px solid var(--accent);
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            box-shadow: 0 0 40px var(--accent-glow);
+            position: relative;
+            transform: perspective(1000px);
+            transition: transform 0.4s ease;
+        }
+
+        .price-box:hover {
+            transform: translateY(-5px) scale(1.01);
+        }
+
+        .badge-tag {
+            background: var(--danger);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+        }
+
+        .price-display {
+            font-size: clamp(2.5rem, 6vw, 3.8rem);
+            font-weight: 900;
+            color: #facc15;
+            margin: 10px 0;
+            text-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+        }
+
+        .price-old {
+            font-size: 1.3rem;
+            text-decoration: line-through;
+            color: var(--text-muted);
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .gift-tag {
+            color: #38bdf8;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 35px;
+            background: linear-gradient(90deg, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .feature-item {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 25px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-8px);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .feature-item:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+            background: rgba(245, 158, 11, 0.1);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Hotline & CTA Section */
+        .cta-box {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            margin-bottom: 50px;
+        }
+
+        .cta-box h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .cta-box p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .hotline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hotline-card {
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s;
+        }
+
+        .hotline-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+            box-shadow: 0 5px 20px rgba(245, 158, 11, 0.2);
+        }
+
+        .hotline-info h4 {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .hotline-info a {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #facc15;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            margin-top: 3px;
+        }
+
+        .btn-icon {
+            background: #2563eb;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .btn-icon:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-zalo {
+            background: #0068ff;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 20px rgba(0, 104, 255, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-zalo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 104, 255, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #06090f;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-announcement">
+        ⚠️ CHƯƠNG TRÌNH TRỢ GIÁ ĐẶC BIỆT DÀNH RIÊNG CHO XE CHỞ HÀNG NỘI BỘ BIỂN TRẮNG ⚠️
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/canhntnear/photo/main/Logo114VPK.png" alt="Logo Vạn Phú Khánh">
+        </div>
+        <p class="subtitle">VẠN PHÚ KHÁNH 114 - GIẢI PHÁP XE NỘI BỘ</p>
+        <h1>GIÁM SÁT HÀNH TRÌNH <span>XE BIỂN TRẮNG</span></h1>
+
+        <div class="price-box" style="margin-top: 30px;">
+            <div class="badge-tag">GIÁ TRỌN GÓI ƯU ĐÃI SỰ KIỆN</div>
+            <div class="price-display">
+                888.000Đ <span class="price-old">1.500.000Đ</span>
+            </div>
+            <div class="gift-tag">
+                <i class="fa-solid fa-gift"></i> Tặng kèm thẻ định danh lái xe RFID cao cấp
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Vì sao nên chọn thiết bị tại Vạn Phú Khánh?</h2>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Chuẩn Quy Chuẩn Kỹ Thuật</h3>
+                <p>Hợp chuẩn QCVN06 & QCVN31, đồng bộ dữ liệu chính xác tuyệt đối.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                <h3>Dữ Liệu Lưu Trữ Toàn Vẹn</h3>
+                <p>Quản lý tốc độ, lịch sử lộ trình trực tiếp trên điện thoại 24/7 mượt mà.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-infinity"></i></div>
+                <h3>Bảo Hành Trọn Đời Xe</h3>
+                <p>Hỗ trợ kỹ thuật liên tục, cam kết đồng hành cùng xe suốt quá trình vận hành.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Lắp Đặt Nhanh Tận Nơi</h3>
+                <p>Phục vụ tận bãi xe, gọn gàng, kín đáo, tuyệt đối an toàn cho hệ thống điện.</p>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h2>ĐĂNG KÝ GIỮ SUẤT ƯU ĐÃI 888K NGAY</h2>
+            <p>Số lượng trợ giá có hạn – Liên hệ ngay đội ngũ kỹ thuật để xếp lịch lắp đặt tận nơi nhanh chóng!</p>
+            
+            <div class="hotline-grid">
+                <div class="hotline-card">
+                    <div class="hotline-info">
+                        <h4>Tư Vấn PCCC</h4>
+                        <a href="tel:0585114114">0585.114.114</a>
+                    </div>
+                    <a href="tel:0585114114" class="btn-icon"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <div class="hotline-card">
+                    <div class="hotline-info">
+                        <h4>Tư Vấn GPS</h4>
+                        <a href="tel:0569058058">0569.058.058</a>
+                    </div>
+                    <a href="tel:0569058058" class="btn-icon"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <div class="hotline-card">
+                    <div class="hotline-info">
+                        <h4>Tư Vấn Giám Sát</h4>
+                        <a href="tel:0588588114">0588.588.114</a>
+                    </div>
+                    <a href="tel:0588588114" class="btn-icon"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <a href="https://zalo.me/0585114114" target="_blank" class="btn-zalo">
+                    <i class="fa-brands fa-rocketchat"></i> Nhắn Zalo Tư Vấn Nhanh
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>VẠN PHÚ KHÁNH 114</strong> – Giải pháp giám sát hành trình toàn diện</p>
+        <p style="margin-top: 8px;">Website chính thức: <a href="https://giamsatxe.net" target="_blank">giamsatxe.net</a></p>
+    </footer>
+
+</body>
+</html>
