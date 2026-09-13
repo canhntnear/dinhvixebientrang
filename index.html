@@ -107,7 +107,7 @@
             transform: none;
             width: 120vw;
             height: 120vw;
-            max-width: 1425px; /* 950px * 150% = 1425px */
+            max-width: 1425px;
             max-height: 1425px;
             z-index: 0;
             pointer-events: none;
@@ -130,7 +130,6 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-        /* ------------------------------------------------------------- */
 
         .top-announcement {
             background: linear-gradient(90deg, #b91c1c, #ef4444);
@@ -183,22 +182,18 @@
             font-size: 0.8rem; font-weight: 800; display: inline-block; margin-bottom: 16px;
         }
         
-        /* ------------------------------------------------------------- */
-        /* HIỆU ỨNG ĐƯỜNG LINE NEON 7 MÀU CHẠY QUANH GIÁ TIỀN            */
-        /* ------------------------------------------------------------- */
+        /* HIỆU ỨNG LINE NEON 7 MÀU CHẠY QUANH GIÁ TIỀN */
         .price-rainbow-wrapper {
             position: relative;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 4px; /* Độ dày đường viền neon */
+            padding: 4px;
             border-radius: 20px;
             overflow: hidden;
             margin: 5px 0 10px 0;
             background: transparent;
         }
-
-        /* Lớp nền xoay tạo dải màu 7 sắc cầu vồng */
         .price-rainbow-wrapper::before {
             content: '';
             position: absolute;
@@ -206,21 +201,10 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: conic-gradient(
-                #ff0000, 
-                #ff7f00, 
-                #ffff00, 
-                #00ff00, 
-                #00bfff, 
-                #8a2be2, 
-                #ff007f, 
-                #ff0000
-            );
+            background: conic-gradient(#ff0000, #ff7f00, #ffff00, #00ff00, #00bfff, #8a2be2, #ff007f, #ff0000);
             animation: rainbow-spin 3.5s linear infinite;
             z-index: 1;
         }
-
-        /* Hiệu ứng ánh sáng tỏa ra bên ngoài (Glow) */
         .price-rainbow-wrapper::after {
             content: '';
             position: absolute;
@@ -228,16 +212,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: conic-gradient(
-                #ff0000, 
-                #ff7f00, 
-                #ffff00, 
-                #00ff00, 
-                #00bfff, 
-                #8a2be2, 
-                #ff007f, 
-                #ff0000
-            );
+            background: conic-gradient(#ff0000, #ff7f00, #ffff00, #00ff00, #00bfff, #8a2be2, #ff007f, #ff0000);
             filter: blur(12px);
             opacity: 0.85;
             animation: rainbow-spin 3.5s linear infinite;
@@ -249,7 +224,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Khối nội dung bên trong che phần giữa để lộ đường viền neon */
         .price-inner-card {
             position: relative;
             background: #0f172a;
@@ -279,7 +253,6 @@
             font-weight: 600; 
             display: inline-block;
         }
-        /* ------------------------------------------------------------- */
 
         .gift-tag { color: #38bdf8; font-weight: 700; margin-top: 15px; font-size: 0.95rem; }
 
@@ -322,10 +295,67 @@
         
         .contact-info-block {
             background: rgba(15, 23, 42, 0.95); border: 1px dashed var(--accent);
-            padding: 20px; border-radius: 10px; margin-top: 30px;
+            padding: 24px; border-radius: 12px; margin-top: 30px;
         }
-        .contact-info-block h3 { color: #38bdf8; margin-bottom: 12px; font-size: 1.05rem; text-transform: uppercase; }
-        .contact-info-block p { color: #f8fafc; margin-bottom: 6px; }
+        .contact-info-block h3 { color: #38bdf8; margin-bottom: 14px; font-size: 1.1rem; text-transform: uppercase; }
+        .contact-info-block p { color: #f8fafc; margin-bottom: 7px; }
+
+        /* KHỐI GOOGLE MAP RATING MỚI */
+        .gmap-rate-box {
+            margin-top: 18px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .gmap-rate-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(30, 41, 59, 0.9);
+            border: 1px solid rgba(245, 158, 11, 0.5);
+            padding: 10px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .gmap-rate-link:hover {
+            border-color: #facc15;
+            background: rgba(51, 65, 85, 0.95);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+        }
+        .gmap-icon-wrap {
+            color: #ea4335;
+            font-size: 1.4rem;
+        }
+        .gmap-text-wrap {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .gmap-stars {
+            color: #facc15;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        .gmap-stars span {
+            color: #cbd5e1;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+        .gmap-title {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: #38bdf8;
+        }
 
         footer {
             text-align: center; padding: 30px 15px 40px; background: #06090f;
@@ -468,6 +498,7 @@
                 <li>Lắp đặt tận nơi nhanh gọn, kín đáo, tuyệt đối an toàn cho hệ thống điện của xe.</li>
             </ul>
 
+            <!-- VÙNG LIÊN HỆ TƯ VẤN KÈM GOOGLE MAP RATE -->
             <div class="contact-info-block">
                 <h3>📞 LIÊN HỆ TƯ VẤN & ĐẶT LỊCH LẮP ĐẶT TẬN NƠI 24/7:</h3>
                 <p>Tư vấn PCCC: <strong>0585.114.114</strong></p>
@@ -477,6 +508,26 @@
                     <strong><a href="https://giamsatxe.net" target="_blank" rel="noopener" style="color: #facc15;">giamsatxe.net</a></strong> - 
                     <strong><a href="https://vanphukhanh.com" target="_blank" rel="noopener" style="color: #facc15;">vanphukhanh.com</a></strong>
                 </p>
+
+                <!-- Nút đánh giá Google Maps -->
+                <div class="gmap-rate-box">
+                    <a href="https://maps.app.goo.gl/nePVen1FDzinLxLk9" target="_blank" rel="noopener noreferrer" class="gmap-rate-link" aria-label="Đánh giá Vạn Phú Khánh trên Google Maps">
+                        <div class="gmap-icon-wrap">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="gmap-text-wrap">
+                            <div class="gmap-title">Đánh giá 5 Sao trên Google Maps</div>
+                            <div class="gmap-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(Xem vị trí & Đánh giá uy tín)</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </article>
     </main>
