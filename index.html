@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ưu Đãi 888K - Thiết Bị Giám Sát Hành Trình Xe Biển Trắng | Vạn Phú Khánh 114</title>
-    <meta name="description" content="Trọn gói thiết bị giám sát hành trình xe biển trắng chở hàng nội bộ chỉ 888.000đ tại Vạn Phú Khánh 114. Đạt chuẩn QCVN06 & QCVN31. Tránh mức phạt 4-11 triệu từ 15/8/2026.">
+    <title>Ưu Đãi 888.888đ - Thiết Bị Giám Sát Hành Trình Xe Biển Trắng | Vạn Phú Khánh 114</title>
+    <meta name="description" content="Trọn gói thiết bị giám sát hành trình xe biển trắng chở hàng nội bộ chỉ 888.888đ tại Vạn Phú Khánh 114. Đạt chuẩn QCVN06 & QCVN31. Tránh mức phạt 4-11 triệu từ 15/8/2026.">
     <meta name="keywords" content="xe nội bộ có phải lắp định vị không, xe biển trắng chở hàng nội bộ, quy định giám sát hành trình xe nội bộ, nghị định phạt xe nội bộ không lắp định vị, Vạn Phú Khánh 114, thiết bị giám sát hành trình 888k">
     <meta name="author" content="Vạn Phú Khánh 114">
-    
+    <link rel="canonical" href="https://giamsatxe.net">
+
+    <!-- Open Graph Tối ưu chia sẻ Zalo / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ưu Đãi 888.888đ - Thiết Bị Giám Sát Hành Trình Xe Biển Trắng">
+    <meta property="og:description" content="Trọn gói định vị xe biển trắng chở hàng nội bộ hợp chuẩn QCVN chỉ 888.888đ. Phục vụ tận nơi 24/7.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/canhntnear/photo/main/Logo114VPK.png">
+
+    <!-- Schema Structured Data: FAQPage & Product -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,7 +59,7 @@
         "@type": "Offer",
         "url": "https://giamsatxe.net",
         "priceCurrency": "VND",
-        "price": "888000",
+        "price": "888888",
         "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition"
@@ -88,46 +96,41 @@
         }
 
         /* ------------------------------------------------------------- */
-        /* HIỆU ỨNG NỀN TRỐNG ĐỒNG XOAY TRÒN (ĐẲNG CẤP NHƯNG BÌNH DÂN) */
+        /* HIỆU ỨNG NỀN TRỐNG ĐỒNG XOAY TRÒN - GÓC DƯỚI BÊN PHẢI (150%)  */
         /* ------------------------------------------------------------- */
         .bg-trongdong-container {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100vw;
-            height: 100vh;
-            max-width: 900px;
-            max-height: 900px;
-            z-index: -1; /* Nằm hoàn toàn dưới các nội dung web */
+            bottom: -20vh;
+            right: -20vw;
+            top: auto;
+            left: auto;
+            transform: none;
+            width: 120vw;
+            height: 120vw;
+            max-width: 1425px; /* 950px * 150% = 1425px */
+            max-height: 1425px;
+            z-index: 0;
             pointer-events: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            opacity: 0.04; /* Độ mờ tinh tế, không làm chói mắt hay che chữ */
+            opacity: 0.07;
+            overflow: hidden;
         }
 
         .bg-trongdong-img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            animation: slow-rotate 60s linear infinite; /* Xoay tròn chậm rãi, mượt mà và uy nghiêm */
+            transform-origin: center center;
+            animation: slow-rotate 80s linear infinite;
         }
 
         @keyframes slow-rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
         /* ------------------------------------------------------------- */
-
-        .sr-only {
-            position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-            overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
-        }
 
         .top-announcement {
             background: linear-gradient(90deg, #b91c1c, #ef4444);
@@ -158,8 +161,10 @@
         }
 
         header {
-            background: radial-gradient(circle at center, rgba(30, 58, 138, 0.9) 0%, rgba(15, 23, 42, 0.95) 80%);
+            background: radial-gradient(circle at center, rgba(30, 58, 138, 0.92) 0%, rgba(15, 23, 42, 0.96) 80%);
             padding: 40px 15px 35px 15px; text-align: center; border-bottom: 2px solid rgba(245, 158, 11, 0.15);
+            position: relative;
+            z-index: 1;
         }
         .logo-container img {
             width: 85px; height: 85px; object-fit: contain; border-radius: 50%;
@@ -170,53 +175,112 @@
         .subtitle { font-size: 1.05rem; color: var(--text-muted); font-weight: 600; margin-bottom: 25px; }
 
         .price-box {
-            background: rgba(15, 23, 42, 0.95); border: 2px solid var(--accent); border-radius: 16px;
-            max-width: 500px; margin: 0 auto; padding: 25px 20px; box-shadow: 0 0 35px rgba(245, 158, 11, 0.25);
+            background: rgba(15, 23, 42, 0.95); border: 2px solid rgba(245, 158, 11, 0.3); border-radius: 16px;
+            max-width: 520px; margin: 0 auto; padding: 25px 20px; box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
         }
         .badge-tag {
             background: var(--danger); color: white; padding: 5px 15px; border-radius: 30px;
-            font-size: 0.8rem; font-weight: 800; display: inline-block; margin-bottom: 12px;
+            font-size: 0.8rem; font-weight: 800; display: inline-block; margin-bottom: 16px;
         }
         
-        .price-display { 
-            font-size: clamp(2.5rem, 6vw, 3.8rem); 
-            font-weight: 900; 
-            color: #fff; 
-            line-height: 1.2;
-            text-shadow: 
-                0 0 5px #fff, 
-                0 0 10px #fff, 
-                0 0 20px #facc15, 
-                0 0 40px #f59e0b, 
-                0 0 80px #ea580c, 
-                0 0 120px #ea580c;
-            animation: neon-pulse 1.5s ease-in-out infinite alternate;
-            margin: 5px 0;
-            display: inline-block;
-        }
-        
-        @keyframes neon-pulse {
-            from {
-                text-shadow: 
-                    0 0 5px #fff, 
-                    0 0 10px #fff, 
-                    0 0 20px #facc15, 
-                    0 0 40px #f59e0b, 
-                    0 0 80px #ea580c;
-                transform: scale(1);
-            }
-            to {
-                text-shadow: 
-                    0 0 2px #fff, 
-                    0 0 5px #fff, 
-                    0 0 15px #facc15, 
-                    0 0 30px #f59e0b, 
-                    0 0 60px #ea580c;
-                transform: scale(1.05);
-            }
+        /* ------------------------------------------------------------- */
+        /* HIỆU ỨNG ĐƯỜNG LINE NEON 7 MÀU CHẠY QUANH GIÁ TIỀN            */
+        /* ------------------------------------------------------------- */
+        .price-rainbow-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px; /* Độ dày đường viền neon */
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 5px 0 10px 0;
+            background: transparent;
         }
 
-        .price-old { font-size: 1.2rem; text-decoration: line-through; color: var(--text-muted); margin-left: 10px; font-weight: 600; text-shadow: none; animation: none; display: inline-block;}
+        /* Lớp nền xoay tạo dải màu 7 sắc cầu vồng */
+        .price-rainbow-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                #ff0000, 
+                #ff7f00, 
+                #ffff00, 
+                #00ff00, 
+                #00bfff, 
+                #8a2be2, 
+                #ff007f, 
+                #ff0000
+            );
+            animation: rainbow-spin 3.5s linear infinite;
+            z-index: 1;
+        }
+
+        /* Hiệu ứng ánh sáng tỏa ra bên ngoài (Glow) */
+        .price-rainbow-wrapper::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                #ff0000, 
+                #ff7f00, 
+                #ffff00, 
+                #00ff00, 
+                #00bfff, 
+                #8a2be2, 
+                #ff007f, 
+                #ff0000
+            );
+            filter: blur(12px);
+            opacity: 0.85;
+            animation: rainbow-spin 3.5s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes rainbow-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Khối nội dung bên trong che phần giữa để lộ đường viền neon */
+        .price-inner-card {
+            position: relative;
+            background: #0f172a;
+            border-radius: 16px;
+            padding: 10px 24px;
+            z-index: 2;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .price-display { 
+            font-size: clamp(2.3rem, 5.5vw, 3.6rem); 
+            font-weight: 900; 
+            color: #ffffff; 
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(250, 204, 21, 0.4);
+        }
+
+        .price-old { 
+            font-size: 1.15rem; 
+            text-decoration: line-through; 
+            color: var(--text-muted); 
+            font-weight: 600; 
+            display: inline-block;
+        }
+        /* ------------------------------------------------------------- */
+
         .gift-tag { color: #38bdf8; font-weight: 700; margin-top: 15px; font-size: 0.95rem; }
 
         .container { max-width: 850px; margin: 30px auto; padding: 0 15px; position: relative; z-index: 1; }
@@ -235,14 +299,17 @@
         .feature-item p { font-size: 0.9rem; color: var(--text-muted); }
 
         article.seo-content-box {
-            background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(30, 41, 59, 0.9); border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 14px; padding: 35px 25px; margin-bottom: 40px;
         }
-        article.seo-content-box h3 {
-            color: #facc15; font-size: 1.15rem; margin: 25px 0 12px 0; font-weight: 700; line-height: 1.4;
+        article.seo-content-box h2 {
+            color: #facc15; font-size: 1.25rem; margin: 30px 0 14px 0; font-weight: 800; line-height: 1.4;
         }
-        article.seo-content-box h3:first-of-type {
-            margin-top: 0; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);
+        article.seo-content-box h2:first-of-type {
+            margin-top: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        article.seo-content-box h3 {
+            color: #38bdf8; font-size: 1.05rem; margin: 18px 0 8px 0; font-weight: 700;
         }
         article.seo-content-box p { margin-bottom: 12px; font-size: 0.95rem; color: #cbd5e1; }
         article.seo-content-box ul { margin-left: 20px; margin-bottom: 15px; color: #cbd5e1; }
@@ -257,8 +324,8 @@
             background: rgba(15, 23, 42, 0.95); border: 1px dashed var(--accent);
             padding: 20px; border-radius: 10px; margin-top: 30px;
         }
-        .contact-info-block h4 { color: #38bdf8; margin-bottom: 12px; font-size: 1.05rem; text-transform: uppercase; }
-        .contact-info-block p { color: #f8fafc; margin-bottom: 5px; }
+        .contact-info-block h3 { color: #38bdf8; margin-bottom: 12px; font-size: 1.05rem; text-transform: uppercase; }
+        .contact-info-block p { color: #f8fafc; margin-bottom: 6px; }
 
         footer {
             text-align: center; padding: 30px 15px 40px; background: #06090f;
@@ -292,12 +359,13 @@
 </head>
 <body>
 
+    <!-- Khối Trống đồng nằm góc dưới bên phải -->
     <div class="bg-trongdong-container" aria-hidden="true">
-        <img class="bg-trongdong-img" src="https://raw.githubusercontent.com/canhntnear/giamsatxe.net/main/trong-dong-o.png" alt="Trống đồng nền">
+        <img class="bg-trongdong-img" src="https://raw.githubusercontent.com/canhntnear/giamsatxe.net/main/trong-dong-o.png" alt="Họa tiết Trống đồng">
     </div>
 
     <div class="top-announcement">
-        <img src="https://raw.githubusercontent.com/canhntnear/photo/main/Logo114VPK.png" alt="Vạn Phú Khánh Logo">
+        <img src="https://raw.githubusercontent.com/canhntnear/photo/main/Logo114VPK.png" alt="Logo Vạn Phú Khánh">
         <span>THIẾT BỊ ĐỊNH VỊ CHUYÊN BIỆT DÀNH RIÊNG CHO XE CHỞ HÀNG NỘI BỘ BIỂN TRẮNG</span>
     </div>
 
@@ -310,10 +378,17 @@
 
         <div class="price-box">
             <div class="badge-tag">GIÁ TRỌN GÓI ƯU ĐÃI SỰ KIỆN</div>
+            
+            <!-- Khung đường line neon 7 màu chạy quanh giá tiền -->
             <div>
-                <span class="price-display">888.000Đ</span> 
-                <span class="price-old">1.500.000Đ</span>
+                <div class="price-rainbow-wrapper">
+                    <div class="price-inner-card">
+                        <span class="price-display">888.888Đ</span> 
+                        <span class="price-old">1.500.000Đ</span>
+                    </div>
+                </div>
             </div>
+
             <div class="gift-tag">
                 <i class="fa-solid fa-gift"></i> Tặng kèm thẻ định danh lái xe RFID cao cấp
             </div>
@@ -346,9 +421,7 @@
         </section>
 
         <article class="seo-content-box">
-            <h2 class="sr-only">NỘI DUNG CHI TIẾT TỐI ƯU SEO & GOOGLE AI OVERVIEW</h2>
-            
-            <h3>1. Xe nội bộ có phải lắp thiết bị giám sát hành trình và camera ghi hình tài xế không?</h3>
+            <h2>1. Xe nội bộ có phải lắp thiết bị giám sát hành trình và camera ghi hình tài xế không?</h2>
             <p>Theo các quy định mới nhất tại Nghị định 168/2024 (được sửa đổi bởi Nghị định 238/2026) và Luật Trật tự, an toàn giao thông đường bộ, xe ô tô vận tải nội bộ (bao gồm xe tải, xe van biển trắng chở hàng nội bộ doanh nghiệp hoặc cá nhân) thuộc nhóm phương tiện bắt buộc phải lắp đặt:</p>
             <ul>
                 <li><strong>Thiết bị giám sát hành trình (Định vị 4G).</strong></li>
@@ -356,9 +429,9 @@
             </ul>
             <p>Tuy nhiên, cơ quan chức năng áp dụng lộ trình xử phạt có thời hạn khác nhau đối với từng loại thiết bị để doanh nghiệp và tài xế chủ động chuẩn bị.</p>
 
-            <h3>2. Các mốc thời gian xử phạt vi phạm đối với xe nội bộ (Cần nắm rõ)</h3>
+            <h2>2. Các mốc thời gian xử phạt vi phạm đối với xe nội bộ</h2>
             
-            <p><strong>📌 Mốc 1: Từ ngày 15/08/2026 – Bắt buộc có Thiết bị giám sát hành trình</strong></p>
+            <h3>📌 Mốc 1: Từ ngày 15/08/2026 – Bắt buộc có Thiết bị giám sát hành trình</h3>
             <ul>
                 <li><strong>Quy định:</strong> Xe vận tải nội bộ bắt buộc phải lắp thiết bị giám sát hành trình hợp chuẩn.</li>
                 <li><strong>Mức phạt nếu vi phạm:</strong>
@@ -371,23 +444,23 @@
                 </li>
             </ul>
 
-            <p><strong>📌 Mốc 2: Từ ngày 01/01/2028 – Bắt buộc có Camera ghi hình tài xế</strong></p>
+            <h3>📌 Mốc 2: Từ ngày 01/01/2028 – Bắt buộc có Camera ghi hình tài xế</h3>
             <ul>
                 <li><strong>Quy định:</strong> Xe vận tải nội bộ phải lắp đặt thiết bị ghi nhận hình ảnh người lái xe.</li>
                 <li><strong>Mức xử phạt:</strong> Các quy định xử phạt vi phạm liên quan đến camera ghi hình tài xế đối với xe nội bộ chính thức có hiệu lực từ thời điểm này.</li>
             </ul>
 
-            <h3>3. Giải đáp thắc mắc: Khi nào xe biển trắng phải dán tem "XE NỘI BỘ"?</h3>
+            <h2>3. Giải đáp thắc mắc: Khi nào xe biển trắng phải dán tem "XE NỘI BỘ"?</h2>
             <p>Không phải tất cả các dòng xe mang biển số trắng đều phải dán tem "XE NỘI BỘ".</p>
             <ul>
                 <li><strong>Đối tượng bắt buộc:</strong> Chỉ áp dụng cho phương tiện phục vụ hoạt động nội bộ của tổ chức, doanh nghiệp. Xe cá nhân thông thường không tham gia vận tải nội bộ thì không bắt buộc.</li>
                 <li><strong>Quy chuẩn dán tem:</strong> Cụm từ "XE NỘI BỘ" phải được dán cố định bằng vật liệu phản quang trên kính phía trước, kích thước tối thiểu 10 x 35 cm (hoặc hiển thị sáng liên tục nếu dùng thiết bị điện tử niêm yết).</li>
             </ul>
 
-            <h3>4. Giải pháp trọn gói từ Vạn Phú Khánh 114 – Trợ giá sốc chỉ 888.000đ</h3>
+            <h2>4. Giải pháp trọn gói từ Vạn Phú Khánh 114 – Trợ giá sốc chỉ 888.888đ</h2>
             <p>Để giúp các chủ xe và doanh nghiệp kịp thời tuân thủ quy định pháp luật, tránh mức phạt nặng từ ngày 15/08/2026, Vạn Phú Khánh 114 triển khai chương trình trợ giá đặc biệt:</p>
             <ul>
-                <li><strong>Giá trọn gói:</strong> Chỉ còn 888.000đ (Tiết kiệm tối đa chi phí đầu tư ban đầu).</li>
+                <li><strong>Giá trọn gói:</strong> Chỉ còn 888.888đ (Tiết kiệm tối đa chi phí đầu tư ban đầu).</li>
                 <li><strong>Tiêu chuẩn kỹ thuật:</strong> Đạt chuẩn QCVN06 & QCVN31, sóng 4G siêu nhạy, định vị vị trí chuẩn xác thời gian thực.</li>
                 <li><strong>Ưu đãi kèm theo:</strong> Tặng kèm thẻ định danh lái xe RFID giúp quản lý ca kíp chuyên nghiệp.</li>
                 <li>Hệ thống server mạnh mẽ, tự động lưu lịch sử lộ trình và quản lý trực tiếp qua App điện thoại 24/7.</li>
@@ -396,20 +469,21 @@
             </ul>
 
             <div class="contact-info-block">
-                <h4>📞 LIÊN HỆ TƯ VẤN & ĐẶT LỊCH LẮP ĐẶT TẬN NƠI 24/7:</h4>
+                <h3>📞 LIÊN HỆ TƯ VẤN & ĐẶT LỊCH LẮP ĐẶT TẬN NƠI 24/7:</h3>
                 <p>Tư vấn PCCC: <strong>0585.114.114</strong></p>
                 <p>Tư vấn GPS: <strong>0569.058.058</strong></p>
                 <p>Tư vấn Giám sát: <strong>0588.588.114</strong></p>
-                <p>Website chính thức: <strong><a href="https://giamsatxe.net" target="_blank" style="color: #facc15;">giamsatxe.net</a></strong></p>
+                <p>Website chính thức: 
+                    <strong><a href="https://giamsatxe.net" target="_blank" rel="noopener" style="color: #facc15;">giamsatxe.net</a></strong> - 
+                    <strong><a href="https://vanphukhanh.com" target="_blank" rel="noopener" style="color: #facc15;">vanphukhanh.com</a></strong>
+                </p>
             </div>
-            
-            <p class="sr-only">Từ khóa tìm kiếm liên quan (SEO Keywords): xe nội bộ có phải lắp định vị không, xe biển trắng chở hàng nội bộ, quy định giám sát hành trình xe nội bộ, nghị định phạt xe nội bộ không lắp định vị, Vạn Phú Khánh 114, thiết bị giám sát hành trình 888k.</p>
         </article>
     </main>
 
     <footer>
         <p><strong>VẠN PHÚ KHÁNH 114</strong> – Giải pháp giám sát hành trình toàn diện</p>
-        <p style="margin-top: 6px;">Bản quyền © 2026. Website: <a href="https://giamsatxe.net" target="_blank">giamsatxe.net</a></p>
+        <p style="margin-top: 6px;">Bản quyền © 2026. Website chính thức: <a href="https://giamsatxe.net" target="_blank" rel="noopener">giamsatxe.net</a> - <a href="https://vanphukhanh.com" target="_blank" rel="noopener">vanphukhanh.com</a></p>
     </footer>
 
     <nav class="sticky-hotline" aria-label="Thanh liên hệ nhanh">
